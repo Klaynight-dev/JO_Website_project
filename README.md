@@ -66,7 +66,22 @@ Pages dédiées aux athlètes, comprenant :
 - **Accessibilité** : Le site doit être accessible aux personnes en situation de handicap, avec des fonctionnalités comme des sous-titres, des descriptions audio, et un design inclusif.
 
 ## Technologies Utilisées
-- **Frontend** : HTML5, CSS3.
+- **Frontend** : HTML5, CSS3, JS.
+```html
+<script> 
+  $(function(){
+    $("#footer").load("footer.html"); 
+  });
+</script> 
+
+<script> 
+  $(function(){
+    $("#nav").load("nav.html"); 
+  });
+</script>
+<div id="header"></div>
+<div id="footer"></div>
+```
 
 ## Conclusion
 Ce projet de site internet a pour but de rendre les Jeux Olympiques Paris 2024 accessibles, interactifs et engageants pour un large public, tout en favorisant la promotion du sport et des valeurs olympiques à l’échelle mondiale.
