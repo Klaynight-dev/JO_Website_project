@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Average Sans');
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+
 :root {
     --font-color : #F3F0F0;
     --button-color : #FAA9CB;
@@ -7,4 +10,6 @@
     --argent-color : #A9A9A9;
     --bronze-color : #9B5530;
     --black-color : #000000;
+    --primary-font : "Average Sans";
+    --secondary-font : "Inter";
 }
