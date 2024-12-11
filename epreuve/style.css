@@ -1,0 +1,6 @@
+@import "../contents/css/style.css";
+
+body
+{
+    background-color: var(--var-primary-color);
+}

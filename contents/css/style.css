@@ -1,10 +1,10 @@
 :root {
-    --var-font-color : #F3F0F0;
-    --var-button-color : #FAA9CB;
-    --var-primary-color : #0B7781;
-    --var-secondary-color : #003853;
-    --var-or : #E0C559;
-    --var-argent : #A9A9A9;
-    --var-bronze : #9B5530;
-    --var-black-color : #000000;
+    --font-color : #F3F0F0;
+    --button-color : #FAA9CB;
+    --primary-color : #0B7781;
+    --secondary-color : #003853;
+    --or-color : #E0C559;
+    --argent-color : #A9A9A9;
+    --bronze-color : #9B5530;
+    --black-color : #000000;
 }
