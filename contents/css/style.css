@@ -158,20 +158,21 @@ footer .partners {
     background-color: var(--font-color);
     border-radius: var(--primary-radius);
     padding: var(--secondary-padding);
+    margin-right: 1em;
+    text-align: center;
 }
 footer .partners img {
-    height: 40px;
+    height: 3em;
+    display: block;
+    margin: 0 auto;
 }
 footer .partners div {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    justify-items: center;
 }
 footer .partners div:nth-child(2) {
     grid-template-columns: repeat(4, 1fr);
-}
-footer .partners div:nth-child(3) {
-    grid-template-columns: repeat(3, 1fr);
 }
 
 footer .bottom-links {
