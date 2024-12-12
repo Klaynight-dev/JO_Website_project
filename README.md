@@ -68,18 +68,20 @@ Pages dédiées aux athlètes, comprenant :
 ## Technologies Utilisées
 - **Frontend** : HTML5, CSS3, JS.
 ```html
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script> 
-  $(function(){
-    $("#footer").load("footer.html"); 
-  });
+    $(function(){
+      $("#footer").load("../contents/html/footer.html"); 
+    });
 </script> 
-
+  
 <script> 
-  $(function(){
-    $("#nav").load("nav.html"); 
-  });
+    $(function(){
+      $("#nav").load("../contents/html/nav.html"); 
+    });
 </script>
-<div id="header"></div>
+
+<div id="nav"></div>
 <div id="footer"></div>
 ```
 
