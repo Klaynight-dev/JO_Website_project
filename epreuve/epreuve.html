@@ -6,12 +6,27 @@
         <title>Épreuve JO</title>
         <link rel="stylesheet" href="../contents/css/style.css"/>
         <link rel="stylesheet" href="./style.css"/>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script> 
+            $(function(){
+            $("#footer").load("../contents/html/footer.html"); 
+            });
+        </script> 
+        
+        <script> 
+            $(function(){
+            $("#nav").load("../contents/html/nav.html"); 
+            });
+        </script>
     </head>
 
     <body>
         <main>
+            <div id="nav"></div>
+
             <h1>Le surf</h1>
-            <article>
+            <article> <!-- Premier de type article : présentation de l'éprevue -->
                 <h2>Présentation de l'épreuve</h2>
                 <p>Le surf est un sport dans lequel le sportif glisse sur des vagues à l'aide d'une planche.
                     Faisant son apparition aux JO en 2020, ce sport a gagné beaucoup de fans, faisant de ce sport.
@@ -22,14 +37,14 @@
                 </figure>
             </article>
 
-            <article>
+            <article> <!-- Deuxième de type article : records -->
                 <h2>Records Battus</h2>
 
                 <p>Le surfeur brésilien Gabriel Medina a réalisé le record olympique du score le plus haut obtenu sur une seule vague,
                 avec un impressionnant 9.5.</p>
             </article>
 
-            <article>
+            <article> <!-- Troisième de type article : Planning -->
                 <h2>Planning</h2>
 
                 <ul>
@@ -51,7 +66,7 @@
                 </ul>
             </article>
             
-            <article>
+            <article> <!-- Quatrième de type article : Temps Forts -->
                 <h2>Temps Forts</h2>
                 <figure>
                     <img src="images/tempsforts.png" alt="Les temps forts de l'épreuve de surf">
@@ -59,7 +74,7 @@
                 </figure>
             </article>
 
-            <article>
+            <article> <!-- CInquième de type article : résultats -->
                 <h2>Résultats de l'athlète</h2>
 
                 <h3>Athlète : Kauli Vaast</h3>
@@ -81,14 +96,16 @@
                         Finales : Médaillé d'Or
                     </li>
                 </ul>
-                
+            </article>
+
+            <article> <!-- Sixième de type article : carte -->
                 <figure>
                     <img src="images/localisation.png" alt="Teahupo'o">
                     <figcaption>L'épreuve s'est déroulée à Teahupo'o, dans le sud de Tahiti</figcaption>
                 </figure>
             </article>
+            <div id="footer"></div>
         </main>
     </body>
-
 </html>
 
