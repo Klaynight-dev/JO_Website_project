@@ -1,93 +1,166 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Profil de Kauli Vaast - Surfeur français et médaille Olympique">
-    <title>Kauli Vaast - Profil Athlète</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Notre Champion Français</title>
+    <link rel="stylesheet" href="contents/css/style.css">
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            background-color: var(--primary-color);
+            padding: var(--secondary-padding);
+            margin: var(--primary-margin);
+            border-radius: var(--secondary-radius);
+        }
+        article {
+            grid-column: 1 2;
+            padding: var(--secondary-padding);
+            background-color: var(--font-color);
+            border-radius: var(--secondary-radius);
+        }
+        article img {
+            width: 100%;
+            border-radius: var(--primary-margin);
+        }
+        article h1 {
+            text-align: left;
+            font-size: 3em;
+            color: var(--secondary-color);
+        }
+        article p {
+            text-align: justify;
+            line-height: 1.6;
+            color: var(--secondary-color);
+        }
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+            text-align: center;
+            padding: 10px;
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background-color: var(--button-color);
+            color: var(--secondary-color);
+        }
+
+        /* Tableau de droite */
+        .palmares {
+            grid-column: 2 / 3;
+            height: 50%;
+            background-color: #ffffff;
+            padding: var(--primary-padding);
+            border-radius: var(--secondary-radius);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .palmares h2 {
+            text-align: center;
+            color: #006a71;
+        }
+        .palmares table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .palmares td, .palmares th {
+            text-align: center;
+            padding: var(--primary-padding) 0;
+        }
+        .palmares th {
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+        .palmares img {
+            width: 1em;
+        }
+        .palmares .competition {
+            border-radius: 5px;
+            margin: 5px 0;
+            font-weight: bold;
+            text-align: center;
+        }
+        .palmares .place {
+            color: #ff2e63;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+            $("#footer").load("./contents/html/footer.html"); 
+        });
+        </script> 
+        
+        <script> 
+        $(function(){
+            $("#nav").load("./contents/html/header.html"); 
+        });
+        </script>
+    <div id="nav"></div>
+    <main>
+        <!-- Section Champion -->   
+        <article>
+            <h1>Notre champion français</h1>
+            <img src="./contents/img/main/kauli_vaast_win.png" alt="Kauli Vaast en compétition">
+            <p>
+                Kauli Vaast, né le 27 mai 2002 à Papeete, Tahiti, est un surfeur professionnel français reconnu pour son talent exceptionnel dans les vagues puissantes, notamment à Teahupo’o, l'une des vagues les plus célèbres et dangereuses au monde. Très jeune, il s’est imposé comme l'un des meilleurs surfeurs de sa génération, remportant de nombreuses compétitions juniors et s’illustrant régulièrement dans des compétitions internationales.
+            </p>
+            <a href="#" class="btn">Lire la suite</a>
+        </article>
 
-    <!-- En-tête avec menu de navigation -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#biographie">Biographie</a></li>
-                <li><a href="#palmares">Palmarès</a></li>
-                <li><a href="#actualite">Actualités</a></li>
-                <li><a href="#reseaux">Réseaux Sociaux</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Section Profil de Kauli Vaast -->
-    <section id="profil">
-        <h1>Kauli Vaast</h1>
-        <img src="kauli_vaast.jpg" alt="Kauli Vaast" class="athlete-img">
-
-        <!-- Biographie -->
-        <section id="biographie">
-            <h2>Biographie</h2>
-            <p><strong>Kauli Vaast</strong> est un surfeur professionnel français, reconnu pour ses performances exceptionnelles dans le monde du surf. Né en 2002 à <strong>Polynésie française</strong>, Kauli a commencé à surfer dès son plus jeune âge et a rapidement grimpé les échelons du surf international.</p>
-            <p>Il est l'un des surfeurs les plus prometteurs de sa génération et a su marquer l'histoire des sports nautiques par sa technique et ses résultats impressionnants sur la scène mondiale.</p>
-        </section>
-
-        <!-- Informations sur les participations aux JO -->
-        <section id="palmares">
+        <!-- Section Palmarès -->
+        <div class="palmares">
             <h2>Palmarès</h2>
-            <p>Kauli Vaast a participé aux <strong>Jeux Olympiques de Paris 2024</strong> dans la discipline du surf. Il a brillamment remporté la médaille d'or lors de sa première participation.</p>
-            <p><strong>Palmarès des Jeux Olympiques :</strong></p>
-            <ul>
-                <li><strong>2024 (Paris)</strong> - Médaille d'Or en Surf</li>
-            </ul>
-        </section>
-
-        <!-- Détails de naissance -->
-        <section id="naissance">
-            <h2>Informations Personnelles</h2>
-            <p><strong>Année de naissance :</strong> 2002</p>
-            <p><strong>Pays de naissance :</strong> Polynésie française</p>
-        </section>
-
-        <!-- Médaille et résultats -->
-        <section id="medailles">
-            <h2>Médailles et Résultats</h2>
-            <p><strong>Médaille d'Or</strong> en Surf - <em>JO Paris 2024</em></p>
-            <p>Kauli a remporté la médaille d'or dans la discipline du surf lors des Jeux Olympiques de Paris 2024. Cette victoire a été un tournant dans sa carrière, confirmant son statut de surfeur d'élite sur la scène internationale.</p>
-        </section>
-
-        <!-- Actualités -->
-        <section id="actualite">
-            <h2>Actualité</h2>
-            <p>Kauli Vaast a récemment battu son propre record en remportant la compétition <strong>World Surf League</strong> 2024. Il continue à surprendre le monde avec des performances exceptionnelles et est un des favoris pour les prochaines compétitions internationales.</p>
-            <p><strong>Derniers résultats marquants :</strong></p>
-            <ul>
-                <li><strong>2024</strong> - Victoire à la World Surf League</li>
-                <li><strong>2024</strong> - Médaille d'Or en Surf, JO Paris 2024</li>
-            </ul>
-        </section>
-
-        <!-- Réseaux sociaux -->
-        <section id="reseaux">
-            <h2>Réseaux Sociaux</h2>
-            <p>Suivez Kauli Vaast sur ses réseaux sociaux pour des mises à jour en temps réel et des aperçus exclusifs de ses aventures en surf :</p>
-            <ul>
-                <li><a href="https://www.instagram.com/kaulivaast" target="_blank">Instagram</a></li>
-                <li><a href="https://twitter.com/kaulivaast" target="_blank">Twitter</a></li>
-                <li><a href="https://www.facebook.com/kaulivaast" target="_blank">Facebook</a></li>
-            </ul>
-        </section>
-    </section>
-
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; 2024 Jeux Olympiques Paris | Tous droits réservés</p>
-    </footer>
-
+            <table>
+                <tr>
+                    <th>Compétition</th>
+                    <th><img src="./contents/img/icon/medal.png" alt="Nombre de Medailles"></th>
+                </tr>
+                <tr>
+                    <td class="competition">Championnat Europe Junior</td>
+                    <td class="place">1er</td>
+                </tr>
+                <tr>
+                    <td class="competition">Jeux Olympiques Paris</td>
+                    <td class="place">1er</td>
+                </tr>
+                <tr>
+                    <td class="competition">Mondial ISA par équipes</td>
+                    <td class="place">2nd</td>
+                </tr>
+                <tr>
+                    <td class="competition">Mondial ISA individuel</td>
+                    <td class="place">3rd</td>
+                </tr>
+                <tr>
+                    <td class="competition">Tahiti Pro 2022</td>
+                    <td class="place">2nd</td>
+                </tr>
+                <tr>
+                    <td class="competition">Sunset Open 2020</td>
+                    <td class="place">2nd</td>
+                </tr>
+                <tr>
+                    <td class="competition">Papara Open 2019</td>
+                    <td class="place">2nd</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <div id="footer"></div>
 </body>
-
 </html>
