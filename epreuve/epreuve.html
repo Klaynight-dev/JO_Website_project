@@ -6,25 +6,10 @@
         <title>Épreuve JO</title>
         <link rel="stylesheet" href="../contents/css/style.css"/>
         <link rel="stylesheet" href="./style.css"/>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script> 
-            $(function(){
-            $("#footer").load("../contents/html/footer.html"); 
-            });
-        </script> 
-        
-        <script> 
-            $(function(){
-            $("#nav").load("../contents/html/nav.html"); 
-            });
-        </script>
     </head>
 
     <body>
         <main>
-            <div id="nav"></div>
-
             <h1>Le surf</h1>
             <article> <!-- Premier de type article : présentation de l'éprevue -->
                 <h2>Présentation de l'épreuve</h2>
@@ -41,7 +26,7 @@
                 <h2>Records Battus</h2>
 
                 <p>Le surfeur brésilien Gabriel Medina a réalisé le record olympique du score le plus haut obtenu sur une seule vague,
-                avec un impressionnant 9.5.</p>
+                avec un impressionnant <strong>9.5</strong>.</p>
             </article>
 
             <article> <!-- Troisième de type article : Planning -->
@@ -104,7 +89,6 @@
                     <figcaption>L'épreuve s'est déroulée à Teahupo'o, dans le sud de Tahiti</figcaption>
                 </figure>
             </article>
-            <div id="footer"></div>
         </main>
     </body>
 </html>

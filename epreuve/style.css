@@ -27,7 +27,7 @@ h1
     text-align: center;
 }
 
-h2
+h2, strong
 {
     font-size: 2.5em;
     text-align: center;
@@ -68,3 +68,56 @@ article:nth-of-type(6)
 {
     grid-area: carte;
 }
+
+figcaption
+{
+    opacity: 0;
+}
+
+strong
+{
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+article:nth-of-type(6):hover img {
+    animation: retrecirImage 0.5s forwards;
+}
+
+article:nth-of-type(6):hover figcaption {
+    animation: montrerFigCaption 0.5s forwards;
+}
+
+img
+{
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+article:nth-of-type(6):hover img {
+    animation: retrecirImage 0.5s forwards;
+}
+
+article:nth-of-type(6):hover figcaption {
+    animation: montrerFigCaption 0.5s forwards;
+}
+
+article:nth-of-type(6):not(:hover) img {
+    animation: grandirImage 0.5s forwards;
+}
+
+@keyframes retrecirImage {
+    0% { transform: scale(1); }
+    100% { transform: scale(0.8); }
+}
+
+@keyframes montrerFigCaption {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes grandirImage {
+    0% { transform: scale(0.8); }
+    100% { transform: scale(1); }
+}
+
