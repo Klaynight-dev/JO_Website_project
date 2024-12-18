@@ -77,7 +77,7 @@ Pages dédiées aux athlètes, comprenant :
   
 <script> 
     $(function(){
-      $("#nav").load("../contents/html/nav.html"); 
+      $("#nav").load("../contents/html/header.html"); 
     });
 </script>
 
