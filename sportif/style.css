@@ -5,6 +5,12 @@ main {
     background-color: var(--primary-color);
     padding: var(--secondary-padding);
     margin: var(--primary-margin);
+    border-radius: var(--secondary-radius);    
+}
+section {
+    grid-column: 1 2;
+    padding: var(--secondary-padding);
+    background-color: var(--font-color);
     border-radius: var(--secondary-radius);
 }
 article {
@@ -20,8 +26,8 @@ article img {
 article h1 {
     text-align: left;
     font-size: 3em;
-    color: var(--secondary-color);
-    font: var(--primary-font);
+    color: var(--font-color);
+    font-family: var(--primary-font);
 }
 article p {
     text-align: justify;
