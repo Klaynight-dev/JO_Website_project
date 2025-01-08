@@ -1,6 +1,29 @@
 
+main{
 
+}
 
+section {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    margin: 10px;
+}
 
+section h2{
+    color: var(--font-color);
+}
 
+section article{
+    background-color: var(--font-color);
+    border-radius: 10px;
+}
 
+section div article{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+button{
+    color: var(--font-color);
+    background-color: var(--secondary-color);
+}
