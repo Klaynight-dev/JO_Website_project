@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JO Paris 2024</title>
+  <style>
+    /* Styles généraux */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+/* Container des cartes */
+main {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Carte principale */
+article {
+  background-color: var(--primary-font);
+  border-radius: var(--primary-border);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+  max-width: 400px;
+}
+
+/* Contenu texte */
+.content {
+  padding: 20px;
+}
+.btn {
+  background-color: #008cba;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #005f6b;
+}
+
+/* Tableau des Médailles */
+.medals {
+  background-color: #cdefff;
+  padding: 10px 20px;
+}
+
+.medals h3 {
+  color: #004d66;
+}
+
+.medals .country {
+  color: #444;
+}
+
+/* Localisation et Temps forts */
+.details {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.map-img,
+.surf-highlights {
+  height: 100px;
+  width: 100px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+table img {
+    width: 1.5em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #008cba;
+    color: white;
+}
+
+tr:hover {
+    background-color: var(--font-color);
+}
+  </style>
+</head>
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script> 
+        $(function(){
+        $("#footer").load("../contents/html/footer.html"); 
+        });
+    </script> 
+    
+    <script> 
+        $(function(){
+        $("#nav").load("../contents/html/header.html"); 
+        });
+    </script>
+
+    <div id="nav"></div>
+    
+
+  <!-- Première Carte : Grands moments des JO -->
+  <main>
+    <article>
+      <img src="./contents/img/main/fresque_jo.png" alt="">
+      <div class="content">
+        <h2>Grands moments des JO</h2>
+        <p>Les Jeux Olympiques de Paris 2024 ont été marqués par des moments mémorables, comme la cérémonie d'ouverture éblouissante, la victoire de l'équipe de France de handball, et le record du monde du 100 mètres battu par une sprinteuse américaine.</p>
+        <button class="btn">Lire la suite</button>
+      </div>
+    </article>
+
+    <div class="medals">
+        <h3>Tableau des Médailles</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Pays</th>
+                <th>Médailles</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><img src="./contents/img/icon/drapeau_france.png" alt=""> France</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td><img src="./contents/img/icon/drapeau_japon.png" alt=""> Japon</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td><img src="./contents/img/icon/drapeau_usa.png" alt=""> Etats-Unis</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td><img src="./contents/img/icon/drapeau_russie.png" alt=""> Russie</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td><img src="./contents/img/icon/drapeau_allemagne.png" alt=""> Allemagne</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td><img src="./contents/img/icon/drapeau_espagne.png" alt=""> Espagne</td>
+                <td>9</td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+
+    <!-- Deuxième Carte : Épreuve Teahupo'o -->
+    <article>
+      <div class="surf-img"></div>
+      <div class="content">
+        <h2>Épreuve : Teahupo'o, Tahiti</h2>
+        <p>Teahupo'o est l'un des spots de surf les plus célèbres au monde. Connu pour ses vagues impressionnantes et ses conditions extrêmes.</p>
+        <button class="btn">Lire la suite</button>
+      </div>
+      <div class="details">
+        <div class="localisation">
+          <h3>Localisation</h3>
+          <div class="map-img"></div>
+        </div>
+        <div class="highlights">
+          <h3>Temps forts</h3>
+          <div class="surf-highlights"></div>
+        </div>
+      </div>
+    </article>
+</main>
+<div id="footer"></div>
+</body>
+</html>
