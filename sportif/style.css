@@ -1,0 +1,96 @@
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    background-color: var(--primary-color);
+    padding: var(--secondary-padding);
+    margin: var(--primary-margin);
+    border-radius: var(--secondary-radius);    
+}
+section {
+    grid-column: 1 2;
+    padding: var(--secondary-padding);
+    background-color: var(--font-color);
+    border-radius: var(--secondary-radius);
+}
+article {
+    grid-column: 1 2;
+    padding: var(--secondary-padding);
+    background-color: var(--font-color);
+    border-radius: var(--secondary-radius);
+}
+article img {
+    width: 100%;
+    border-radius: var(--primary-margin);
+}
+article h1 {
+    text-align: left;
+    font-size: 3em;
+    color: var(--font-color);
+    font-family: var(--primary-font);
+}
+article p {
+    text-align: justify;
+    line-height: 1.6;
+    color: var(--secondary-color);
+}
+.btn {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+    background-color: var(--button-color);
+    color: var(--secondary-color);
+}
+
+/* Tableau de droite */
+.palmares {
+    grid-column: 2 / 3;
+    height: 50%;
+    background-color: #ffffff;
+    padding: var(--primary-padding);
+    border-radius: var(--secondary-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.palmares h2 {
+    text-align: center;
+    color: #006a71;
+}
+.palmares table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.palmares td, .palmares th {
+    text-align: center;
+    padding: var(--primary-padding) 0;
+}
+.palmares th {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.palmares img {
+    width: 1em;
+}
+.palmares .competition {
+    border-radius: 5px;
+    margin: 5px 0;
+    font-weight: bold;
+    text-align: center;
+}
+.palmares .place {
+    color: #ff2e63;
+    font-weight: bold;
+}
