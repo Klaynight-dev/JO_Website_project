@@ -162,8 +162,13 @@ footer .partners {
     padding: var(--secondary-padding);
     margin-right: 1em;
     text-align: center;
-    width: 100%;
 }
+@media (max-width: 768px) {
+    footer .container {
+        width: 100%;
+    }
+}
+
 footer .partners img {
     height: 3em;
     display: block;
