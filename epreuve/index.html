@@ -9,6 +9,27 @@
     </head>
 
     <body>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+		<script> 
+
+			$(function(){
+			$("#footer").load("../contents/html/footer.html"); 
+			});
+
+		</script> 
+	
+		<script> 
+
+			$(function(){
+			$("#nav").load("../contents/html/header.html"); 
+			});
+
+		</script>
+
+		<div id="nav"></div> 
+
         <main>
             <h1>Le surf</h1>
             <article> <!-- Premier de type article : présentation de l'éprevue -->
@@ -59,7 +80,7 @@
                 </figure>
             </article>
 
-            <article> <!-- CInquième de type article : résultats -->
+            <article> <!-- Cinquième de type article : résultats -->
                 <h2>Résultats de l'athlète</h2>
 
                 <h3>Athlète : Kauli Vaast</h3>
@@ -90,6 +111,9 @@
                 </figure>
             </article>
         </main>
+
+        <div id="footer"></div> 
+
     </body>
 </html>
 
