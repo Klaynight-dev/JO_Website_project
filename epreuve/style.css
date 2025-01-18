@@ -10,8 +10,8 @@ main {
         "epreuve planning resultats"
         "epreuve tempsfort resultats"
         "record tempsfort carte";
-    overflow: hidden; /* Ensure content doesn't overflow */
-    max-width: 100%; /* Prevent layout from exceeding screen width */
+    overflow: hidden;
+    max-width: 100%;
 }
 
 h1, article {
@@ -38,7 +38,8 @@ p, li, figcaption {
 
 article {
     padding: 1em;
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    box-sizing: border-box;
+    margin: 1em 0;
 }
 
 article:nth-of-type(1) {
@@ -86,7 +87,7 @@ article:nth-of-type(6):hover figcaption {
 img {
     border-radius: 10px;
     transition: transform 0.5s;
-    max-width: 100%; /* Prevent images from overflowing */
+    max-width: 100%;
     height: auto;
 }
 
@@ -121,7 +122,7 @@ article:nth-of-type(6):not(:hover) img {
     }
 
     article {
-        padding: 0.5em; /* Adjust padding for smaller screens */
+        padding: 0.5em;
     }
 }
 
