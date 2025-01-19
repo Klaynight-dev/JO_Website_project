@@ -1,9 +1,6 @@
 
 /* Styling for the main section */
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
     padding: 2rem;
     background-color: var(--font-color);
     color: var(--text-color);
@@ -17,16 +14,26 @@ main h2 {
     margin-bottom: 1rem;
     text-align: center;
 }
+
 a{
     color: var(--font-color);
 }
+
 a:hover{
     color: var(--button-color);
 }
+
+section, article, h3, article div{
+    border-radius: var(--secondary-radius);
+}
+article div:first-of-type h4{
+    border-color: var(--secondary-color);
+}
+
 /* Article layout for "Surf une discipline récente?" */
 section:first-of-type {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30% 70%;
     gap: 1.5rem;
     align-items: start;
     background-color: var(--primary-color);
@@ -116,7 +123,6 @@ section:nth-of-type(2) article h3 {
 
 section:nth-of-type(2) figure img {
     width: 100%;
-    border-radius: 50%;
     height: auto;
     max-width: 150px;
     object-fit: cover;
