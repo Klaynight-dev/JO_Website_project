@@ -22,6 +22,81 @@
     </nav>
 </header>
 
+<style>
+    .menu-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .bar {
+        height: 3px;
+        width: 25px;
+        background-color: var(--font-color);
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .nav-list {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-list li {
+        margin: 0 15px;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+
+    @media (max-width: 830px) {
+        .menu-toggle {
+            display: flex;
+        }
+        nav {
+            justify-content: end;
+            margin-right: var(--secondary-margin);
+        }
+
+        .nav-list {
+            display: none;
+            flex-direction: column;
+            width: auto;
+            position: absolute;
+            top: 60px;
+            right: 5px;
+            background-color: var(--font-color);
+            z-index: 999;
+            padding: var(--primary-padding);
+            border-radius: var(--secondary-radius);
+        }
+
+        .nav-list.active {
+            display: flex;
+        }
+
+        .nav-list li {
+            margin: 10px 0;
+            text-align: center;
+            margin: 15px 0px;
+        }
+
+        .menu-toggle.active .bar:nth-child(1) {
+            transform: rotate(45deg) translate(15px);
+        }
+
+        .menu-toggle.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active .bar:nth-child(3) {
+            transform: rotate(-45deg) translate(15px);
+        }
+    }
+</style>
+
 <script>
     const mobileMenu = document.getElementById('mobile-menu');
     const navList = document.querySelector('.nav-list');
