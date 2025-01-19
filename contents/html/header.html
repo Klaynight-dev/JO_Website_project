@@ -7,10 +7,27 @@
         </h1>
     </div>
     <nav>
-        <a href="#">Médaille</a>
-        <a href="https://klaynight.fr/JO_Website_project/discipline">Discipline</a>
-        <a href="https://klaynight.fr/JO_Website_project/epreuve">Épreuve</a>
-        <a href="https://klaynight.fr/JO_Website_project/sportif">Sportif</a>
-        <a href="#">Paralympisme</a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#">Médaille</a></li>
+            <li><a href="https://klaynight.fr/JO_Website_project/discipline">Discipline</a></li>
+            <li><a href="https://klaynight.fr/JO_Website_project/epreuve">Épreuve</a></li>
+            <li><a href="https://klaynight.fr/JO_Website_project/sportif">Sportif</a></li>
+            <li><a href="#">Paralympisme</a></li>
+        </ul>
     </nav>
 </header>
+
+<script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+
+    mobileMenu.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+</script>
