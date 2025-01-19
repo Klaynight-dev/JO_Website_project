@@ -10,6 +10,7 @@ main {
     background-color: var(--font-color);
     color: var(--text-color);
     font-family: var(--font-family);
+    max-width: 1200px;
 }
 
 /* Section titles */
