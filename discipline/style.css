@@ -1,3 +1,8 @@
+/* Global image styling */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* Styling for the main section */
 main {
