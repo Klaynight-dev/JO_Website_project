@@ -15,39 +15,48 @@ main h2 {
     text-align: center;
 }
 
-a{
+a {
     color: var(--font-color);
+    text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: var(--button-color);
 }
 
-section, article, h3, article div{
+section, article, h3, article div {
     border-radius: var(--secondary-radius);
-}
-article div:first-of-type h4{
-    border-color: var(--secondary-color);
 }
 
 /* Article layout for "Surf une discipline récente?" */
 section:first-of-type {
     display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 1.5rem;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
     align-items: start;
     background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: var(--secondary-radius);
+    box-shadow: var(--box-shadow);
 }
 
-section:first-of-type article {
+section:first-of-type h2 {
+    grid-column: span 2;
+    text-align: left;
+    font-size: 1.8rem;
+    color: var(--font-color);
+    margin-bottom: 1rem;
+}
+
+/* Left Article Styling */
+section:first-of-type article:first-of-type {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-color: var(--font-color);
 }
 
 section:first-of-type figure {
-    width: 70%;
+    width: 100%;
     height: auto;
     overflow: hidden;
     border-radius: 0.5rem;
@@ -59,13 +68,33 @@ section:first-of-type figure img {
     object-fit: cover;
 }
 
-/* Styling for Duke Kahanamoku */
 section:first-of-type article h3 {
-    font-size: 1.5rem;
-    color: var(--font-color);
+    color: var(--black-color);
 }
 
-section:first-of-type article button {
+section:first-of-type article:first-of-type p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Right Article Styling */
+section:first-of-type article:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--font-color);
+    border-radius: var(--secondary-radius);
+}
+
+section:first-of-type article:nth-of-type(2) h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+section:first-of-type article:nth-of-type(2) button {
     align-self: flex-start;
     background-color: var(--secondary-color);
     color: var(--font-color);
@@ -75,10 +104,22 @@ section:first-of-type article button {
     cursor: pointer;
 }
 
-section:first-of-type article button:hover{
+section:first-of-type article:nth-of-type(2) button:hover {
     background-color: var(--button-color);
     color: var(--font-color);
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    section:first-of-type {
+        grid-template-columns: 1fr;
+    }
+
+    section:first-of-type h2 {
+        text-align: center;
+    }
+}
+
 
 /* Grid for the athletes */
 section:nth-of-type(2) div {
