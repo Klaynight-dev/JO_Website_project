@@ -8,7 +8,7 @@ main {
 }
 
 /* Section titles */
-main h2 {
+main section h2 {
     font-size: 2rem;
     color: var(--font-color);
     margin-bottom: 1rem;
