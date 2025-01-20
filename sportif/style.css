@@ -60,7 +60,7 @@ article p {
 
 /* Tableau de droite */
 .palmares {
-    grid-column: 2 / 3;
+    grid-column: 8 / 12;
     height: 50%;
     background-color: #ffffff;
     padding: var(--primary-padding);
