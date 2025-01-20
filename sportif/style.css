@@ -10,7 +10,7 @@ main {
 section {
     grid-column: 1 2;
     padding: var(--secondary-padding);
-    background-color: var(--font-color);
+    background-color: var(--primary-color);
     border-radius: var(--secondary-radius);
 }
 article {
@@ -24,6 +24,12 @@ article img {
     border-radius: var(--primary-margin);
 }
 article h1 {
+    text-align: left;
+    font-size: 3em;
+    color: var(--font-color);
+    font-family: var(--primary-font);
+}
+section h1{
     text-align: left;
     font-size: 3em;
     color: var(--font-color);
