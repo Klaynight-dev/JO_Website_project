@@ -10,7 +10,6 @@ main {
     background-color: var(--font-color);
     color: var(--text-color);
     font-family: var(--font-family);
-    max-width: 1200px;
 }
 
 /* Section titles */
@@ -36,7 +35,6 @@ section, article, h3, article div {
 }
 section {
     margin: 10px 0;
-    max-width: 1200px;
 }
 
 section:first-of-type {
