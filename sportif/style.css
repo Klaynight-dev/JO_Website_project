@@ -1,32 +1,34 @@
 main {
     gap: 20px;
-    background-color: var(--primary-color);
-    padding: var(--secondary-padding);
-    margin: var(--primary-margin);
-    border-radius: var(--secondary-radius);    
+    padding: var(--secondary-padding);   
 }
+
 section {
-    display: grid;
-    grid-column: 2fr;
-    padding: var(--secondary-padding);
     background-color: var(--primary-color);
-    border-radius: var(--secondary-radius);
+    border-radius: var(--secondary-radius); 
+    padding: var(--secondary-padding);
 }
 
 section div{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 20px;
     padding: var(--secondary-padding);
     background-color: var(--primary-color);
     border-radius: var(--secondary-radius);
 }
 
-section div article{
-    display: grid;
-    grid-column: 2fr;
-    padding: var(--secondary-padding);
+section div article:first-of-type{
+    grid-column: 1/2;
     background-color: var(--font-color);
-    border-radius: var(--secondary-radius);
+    height: max-content;
+}
+
+section div article:last-of-type{
+    grid-column: 2/3;
+    padding: 20px;
+    height: max-content;
+    background-color: var(--font-color);
 }
 
 article {
@@ -39,17 +41,13 @@ article img {
     width: 100%;
     border-radius: var(--primary-margin);
 }
-article h1 {
+
+h1{
     text-align: left;
     font-size: 3em;
     color: var(--font-color);
     font-family: var(--primary-font);
-}
-section h1{
-    text-align: left;
-    font-size: 3em;
-    color: var(--font-color);
-    font-family: var(--primary-font);
+    margin: 0 0 0 20px;
 }
 article p {
     text-align: justify;
