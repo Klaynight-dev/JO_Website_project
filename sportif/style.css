@@ -1,6 +1,4 @@
 main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
     gap: 20px;
     background-color: var(--primary-color);
     padding: var(--secondary-padding);
@@ -8,11 +6,28 @@ main {
     border-radius: var(--secondary-radius);    
 }
 section {
-    grid-column: 1 2;
+    display: grid;
+    grid-column: 2fr;
     padding: var(--secondary-padding);
     background-color: var(--primary-color);
     border-radius: var(--secondary-radius);
 }
+
+section div{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: var(--secondary-padding);
+    background-color: var(--primary-color);
+    border-radius: var(--secondary-radius);
+}
+
+section div article{
+    display: grid;
+    padding: var(--secondary-padding);
+    background-color: var(--font-color);
+    border-radius: var(--secondary-radius);
+}
+
 article {
     grid-column: 1 2;
     padding: var(--secondary-padding);
@@ -38,7 +53,7 @@ section h1{
 article p {
     text-align: justify;
     line-height: 1.6;
-    color: var(--secondary-color);
+    color: var(--black-color);
 }
 .btn {
     display: block;
@@ -73,7 +88,8 @@ article p {
 }
 .palmares h2 {
     text-align: center;
-    color: #006a71;
+    color: var(--black-color);
+    font-family: var(--primary-font);
 }
 .palmares table {
     width: 100%;
