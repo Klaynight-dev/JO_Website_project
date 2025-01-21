@@ -23,6 +23,7 @@ section div{
 
 section div article{
     display: grid;
+    grid-column: 2fr;
     padding: var(--secondary-padding);
     background-color: var(--font-color);
     border-radius: var(--secondary-radius);
