@@ -37,7 +37,7 @@
 							Le surf devrait intégrer les disciplines paralympiques à partir des Jeux de Los Angeles 2028.
 						</p>
 					</article>
-	
+
 					<article>
 						<h3>Duke Kahanamoku</h3>
 						<img src="../contents/img/main/duke_kahanamoku.png" alt="Duke Kahanamoku" title="Duke Kahanamoku">
@@ -46,8 +46,31 @@
 							Il pratiquait le surf, pratique ancestrale relatée pour la première fois par <a href="https://fr.wikipedia.org/wiki/James_Cook"><strong>James Cook </strong></a>
 							et qui avait ensuite été interdite par les missionnaires britanniques.
 						</p>
-						<button>Lire la suite</button>
+						<p>
+							Dans sa jeunesse, Kahanamoku préférait les planches de surf de la vieille école (traditionnelle) et les appelait son « papa nui », construites à la manière des anciennes planches hawaiiennes « olo ». Fabriquées dans le bois d'un arbre koa, elles mesuraient 4,8 m (16 pieds) de long et pesaient 52 kg. À cette époque, les planches n'avaient pas encore de dérive. Dans sa carrière, plus tard, il se servit souvent de petites planches, mais préféra toujours celles en bois.
+							Le « Duke » excelle en natation grâce à une technique de crawl très efficace, technique qu'il a apprise lors de la visite de nageurs australiens à Hawaï en 1910 et qu'il a améliorée.
+						</p>
+						<a href="#" class="btn" onclick="showMore(event)">Lire la suite</a>
 					</article>
+					<script>
+						function showMore(event) {
+							event.preventDefault();
+							var moreText = event.target.previousElementSibling;
+							if (moreText.style.display === "none" || moreText.style.display === "") {
+								moreText.style.display = "block";
+								event.target.textContent = "Lire moins";
+							} else {
+								moreText.style.display = "none";
+								event.target.textContent = "Lire la suite";
+							}
+						}
+	
+						document.addEventListener("DOMContentLoaded", function() {
+							var p = document.querySelector("section > div > article:first-of-type > p:last-of-type");
+							p.style.display = "none";
+						});
+					</script>
+					
 				</div>
 			</section>
 
