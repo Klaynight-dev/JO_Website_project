@@ -130,4 +130,54 @@ article p {
     border-radius: 10px;
     width: 725px;
     text-align: center;
- }
+}
+
+/* Réseaux*/
+.reseaux {
+    grid-column: 8 / 12;
+    height: 50%;
+    background-color: #ffffff;
+    padding: var(--primary-padding);
+    border-radius: var(--secondary-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reseaux h2 {
+    text-align: center;
+    color: var(--black-color);
+    font-family: var(--primary-font);
+}
+.reseaux table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.reseaux td, .reseaux th {
+    text-align: center;
+    padding: var(--primary-padding) 0;
+}
+.reseaux th {
+    font-family: var(--primary-font);
+    font-weight: bolder;
+}
+.reseaux img {
+    width: 1em;
+}
+.reseaux table tr td:last-of-type{
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+
+.reseaux table tr td:first-of-type{
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    border-radius: 12px;
+    background-color: var(--button-color);
+    font-weight: bold;
+}
+
+.reseaux table td{
+    padding: var(--primary-padding);
+}

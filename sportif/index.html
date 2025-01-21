@@ -30,8 +30,29 @@
                     <p>
                         Kauli Vaast, né le 27 mai 2002 à Papeete, Tahiti, est un surfeur professionnel français reconnu pour son talent exceptionnel dans les vagues puissantes, notamment à Teahupo’o, l'une des vagues les plus célèbres et dangereuses au monde. Très jeune, il s’est imposé comme l'un des meilleurs surfeurs de sa génération, remportant de nombreuses compétitions juniors et s’illustrant régulièrement dans des compétitions internationales.
                     </p>
-                    <a href="#" class="btn">Lire la suite</a>
+                    <p>
+                        En 2023, il a marqué l'histoire en se qualifiant pour les Jeux Olympiques de Paris 2024, où les épreuves de surf se dérouleront à Teahupo’o, un spot qu'il connaît intimement et où il excelle. Kauli est apprécié pour son courage et sa détermination. Il est un exemple pour la jeunesse et un ambassadeur du surf français.
+                    </p>
+                    <a href="#" class="btn" onclick="showMore(event)">Lire la suite</a>
                 </article>
+                <script>
+                    function showMore(event) {
+                        event.preventDefault();
+                        var moreText = event.target.previousElementSibling;
+                        if (moreText.style.display === "none" || moreText.style.display === "") {
+                            moreText.style.display = "block";
+                            event.target.textContent = "Lire moins";
+                        } else {
+                            moreText.style.display = "none";
+                            event.target.textContent = "Lire la suite";
+                        }
+                    }
+
+                    document.addEventListener("DOMContentLoaded", function() {
+                        var p = document.querySelector("section > div > article:first-of-type > p:last-of-type");
+                        p.style.display = "none";
+                    });
+                </script>
         
 
                 <!-- Article Palmarès -->
@@ -82,48 +103,33 @@
             <h1 class="mtn">Et maintenant ?</h1>
             <div>
                 <article>
-                    <img src="../contents/img/main/kauli_vaast_win.png" alt="Kauli Vaast en compétition">
+                    <img src="../contents/img/main/kauli_vaast_prime.png" alt="Kauli Vaast à son prime">
                     <p>
-                        Kauli Vaast, né le 27 mai 2002 à Papeete, Tahiti, est un surfeur professionnel français reconnu pour son talent exceptionnel dans les vagues puissantes, notamment à Teahupo’o, l'une des vagues les plus célèbres et dangereuses au monde. Très jeune, il s’est imposé comme l'un des meilleurs surfeurs de sa génération, remportant de nombreuses compétitions juniors et s’illustrant régulièrement dans des compétitions internationales.
+                        Kauli Vaast est actuellement dans une phase de transition après son triomphe aux Jeux olympiques de Paris 2024, où il a remporté l'or en surf. Suite à ce succès historique, il se concentre sur de nouveaux objectifs, notamment intégrer l'élite mondiale du surf professionnel et gagner une étape du Championship Tour (CT) sur le spot mythique de Teahupo'o, à Tahiti. Cette vague est étroitement liée à son parcours, puisqu'il a grandi en face de cette célèbre presqu'île.
+
+                        Son retour à Tahiti après les JO a été marqué par un accueil chaleureux de ses supporters. Ce moment de célébration s'ajoute à la fierté qu'il a suscitée dans toute la Polynésie, renforçant son statut de héros local. Vaast prévoit de reprendre rapidement l'entraînement après avoir profité de sa victoire olympique pour se préparer à ses prochaines compétitions
                     </p>
-                    <a href="#" class="btn">Lire la suite</a>
                 </article>
         
 
                 <!-- Article Palmarès -->
-                <article class="palmares">
-                    <h2>Palmarès</h2>
+                <article class="reseaux">
+                    <h2>Ses réseaux sociaux</h2>
                     <table>
                         <tr>
-                            <th><h3>Compétition</h3></th>
-                            <th><img src="../contents/img/icon/medal.png" alt="Nombre de Medailles"></th>
-                        </tr>
-                        <tr>
-                            <td>Championnat Europe Junior</td>
+                            <td><img src="../contents/img/icon/" alt="Nombre de Medailles"></td>
                             <td>1er</td>
                         </tr>
                         <tr>
-                            <td>Jeux Olympiques Paris</td>
+                            <td><img src="../contents/img/icon/medal.png" alt="Nombre de Medailles"></td>
                             <td>1er</td>
                         </tr>
                         <tr>
-                            <td>Mondial ISA par équipes</td>
+                            <td><img src="../contents/img/icon/medal.png" alt="Nombre de Medailles"></td>
                             <td>2nd</td>
                         </tr>
                         <tr>
-                            <td>Mondial ISA individuel</td>
-                            <td>3rd</td>
-                        </tr>
-                        <tr>
-                            <td>Tahiti Pro 2022</td>
-                            <td>2nd</td>
-                        </tr>
-                        <tr>
-                            <td>Sunset Open 2020</td>
-                            <td>2nd</td>
-                        </tr>
-                        <tr>
-                            <td>Papara Open 2019</td>
+                            <td><img src="../contents/img/icon/medal.png" alt="Nombre de Medailles"></td>
                             <td>2nd</td>
                         </tr>
                     </table>
