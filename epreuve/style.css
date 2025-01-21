@@ -4,7 +4,7 @@ main {
     display: grid;
     grid-gap: 0;
     grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: 4.5em 12em minmax(10em, auto) 20em;
+    grid-template-rows: 4.5em 12em minmax(10em, auto) 25em;
     grid-template-areas: 
         "head head head"
         "epreuve planning resultats"
@@ -36,7 +36,7 @@ h2, strong {
     text-align: center;
 }
 
-main p, main li, figcaption {
+main p, main li {
     font-size: 0.75em;
 }
 
@@ -69,6 +69,7 @@ article:nth-of-type(5) {
 
 article:nth-of-type(6) {
     grid-area: carte;
+    overflow: hidden;
 }
 
 figcaption {
@@ -130,6 +131,11 @@ article:nth-of-type(6):not(:hover) img {
 
     article {
         padding: 0.5em;
+    }
+
+    figure img:nth-of-type(1)
+    {
+        display: none;
     }
 }
 
