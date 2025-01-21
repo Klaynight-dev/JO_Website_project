@@ -7,6 +7,7 @@ section {
     background-color: var(--primary-color);
     border-radius: var(--secondary-radius); 
     padding: var(--secondary-padding);
+    gap: 20px;
 }
 
 section div{
@@ -53,6 +54,7 @@ article p {
     text-align: justify;
     line-height: 1.6;
     color: var(--black-color);
+    font-family: var(--primary-font);
 }
 .btn {
     display: block;
@@ -66,6 +68,7 @@ article p {
     border-radius: 5px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
+    font-family: var(--primary-font);
 }
 .btn:hover {
     background-color: var(--button-color);
@@ -99,19 +102,32 @@ article p {
     padding: var(--primary-padding) 0;
 }
 .palmares th {
-    text-transform: uppercase;
+    font-family: var(--primary-font);
     font-weight: bolder;
 }
 .palmares img {
     width: 1em;
 }
-.palmares .competition {
-    border-radius: 5px;
-    margin: 5px 0;
+.palmares table tr td:last-of-type{
+    font-family: var(--primary-font);
     font-weight: bold;
+}
+
+.palmares table tr td:first-of-type{
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    border-radius: 12px;
+    background-color: var(--button-color);
+    font-weight: bold;
+}
+
+.palmares table td{
+    padding: var(--primary-padding);
+}
+
+.mtn{
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    width: 725px;
     text-align: center;
-}
-.palmares .place {
-    color: #ff2e63;
-    font-weight: bold;
-}
+ }
