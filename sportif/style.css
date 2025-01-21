@@ -180,3 +180,27 @@ article p {
 .reseaux table td{
     padding: var(--primary-padding);
 }
+
+@media screen and (max-width: 1100px) {
+    section div {
+        display: block;
+    }
+    section div article:last-of-type {
+        margin-top: 20px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .mtn{
+        width: 250px;
+    }
+    .btn {
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 440px) {
+    .palmares {
+        font-size: 0.5em;
+    }
+}
