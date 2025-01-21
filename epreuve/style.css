@@ -156,10 +156,6 @@ article:nth-of-type(6):not(:hover) img {
             "carte";
     }
 
-    main h1 {
-        font-size: 3em;
-    }
-
     main h2, strong {
         font-size: 2em;
     }
@@ -170,7 +166,7 @@ article:nth-of-type(6):not(:hover) img {
 
     article:nth-of-type(1)
     {
-        margin-top: 1em;
+        margin-top: 0.3em;
         padding-top: 0;
     }
 }
