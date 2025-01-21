@@ -28,6 +28,20 @@ a:hover {
     color: var(--button-color);
 }
 
+.btn {
+    color: var(--font-color);
+    text-decoration: none;
+    transition: var(--primary-transition);
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.btn:hover {
+    color: var(--secondary-color);
+    background-color: var(--button-color);
+}
+
 section, article, h3, article div {
     border-radius: var(--secondary-radius);
 }
