@@ -106,7 +106,7 @@ section:first-of-type article:nth-of-type(2) {
 
 section:first-of-type article:nth-of-type(2) h3 {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--black-color);
 }
 
 section:first-of-type article:nth-of-type(2) button {
