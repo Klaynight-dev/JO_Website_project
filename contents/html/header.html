@@ -1,3 +1,39 @@
+<div class="loader">
+    <div class="loader-spinner"></div>
+    <p>Chargement en cours...</p>
+</div>
+<style>
+    .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 999;
+    transition: display 2s;
+}
+
+.loader-spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+</style>
+
 <link rel="stylesheet" href="https://klaynight.fr/JO_Website_project/contents/css/style.css">
 <header>
     <div class="header-left">
@@ -104,5 +140,11 @@
     mobileMenu.addEventListener('click', () => {
         navList.classList.toggle('active');
         mobileMenu.classList.toggle('active');
+    });
+</script>
+<script>
+    window.addEventListener("load", function() {
+    // La page est entièrement chargée, masquez l'écran de chargement.
+    document.getElementsByClassName("loader")[0].style.display = "none";
     });
 </script>
