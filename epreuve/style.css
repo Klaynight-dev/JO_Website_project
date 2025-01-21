@@ -37,7 +37,7 @@ h2, strong {
 }
 
 main p, main li {
-    font-size: 0.75em;
+    font-size: 0.85em;
 }
 
 article {
@@ -118,7 +118,7 @@ article:nth-of-type(6):not(:hover) img {
     100% { transform: scale(1); }
 }
 
-/* Responsive design */
+/* Design responsif */
 @media (max-width: 1200px) {
     main {
         grid-template-columns: 1fr 1fr;
@@ -128,12 +128,16 @@ article:nth-of-type(6):not(:hover) img {
             "resultats tempsfort"
             "record carte";
     }
-
+    main h1
+    {
+        height: 1.5em;
+        margin-bottom: 1.5em;
+    }
     article {
         padding: 0.5em;
     }
 
-    figure img:nth-of-type(1)
+    article:nth-of-type(1) figure
     {
         display: none;
     }
@@ -152,16 +156,22 @@ article:nth-of-type(6):not(:hover) img {
             "carte";
     }
 
-    h1 {
+    main h1 {
         font-size: 3em;
     }
 
-    h2, strong {
+    main h2, strong {
         font-size: 2em;
     }
 
     p, li, figcaption {
-        font-size: 1.2em;
+        font-size: 1.75em;
+    }
+
+    article:nth-of-type(1)
+    {
+        margin-top: 1em;
+        padding-top: 0;
     }
 }
 
@@ -173,6 +183,8 @@ article:nth-of-type(6):not(:hover) img {
     h2, strong {
         font-size: 1.5em;
     }
+
+
 
     p, li, figcaption {
         font-size: 1em;
